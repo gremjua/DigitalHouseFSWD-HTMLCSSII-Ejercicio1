@@ -26,15 +26,34 @@
             </div>
             <div>
                 <h3>¿Qué tipo de plato fue el que más te gustó?</h3>
+                <input type="checkbox" name="plato" value="e">Entrada<br>
+                <input type="checkbox" name="plato" value="pp">Plato principal<br>
+                <input type="checkbox" name="plato" value="po">Postre<br>
+                <input type="checkbox" name="plato" value="o">Otros<br>
             </div>
             <div>
                 <h3>¿Recomendarías el lugar?</h3>
+                <input type="radio" name="recomendacion" value="si">Sí
+                <input type="radio" name="recomendacion" value="no">No<br>
             </div>
             <div>
                 <h3>¿Por qué?</h3>
+                <textarea name="porque" id="porque" cols="60" rows="10"></textarea>
             </div>
             <div>
                 <h3>Dejanos tus datos y nos pondremos en contacto con vos</h3>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <button type="submit" class="button">Enviar</button>
+                    <button type="reset" class="button">Resetear</button>
+                </p>
             </div>
         </form>
     </body>
